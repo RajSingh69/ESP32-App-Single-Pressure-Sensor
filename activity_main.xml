@@ -1,0 +1,57 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_colour">
+
+    <View
+        android:id="@+id/pressureBall"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_background" />
+
+    <TextView
+        android:id="@+id/tvForceReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pressureBall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Raw ADC Value: 0"
+        android:textColor="@color/yellow"
+        android:textSize="18sp" />
+
+    <!-- Second TextView for Kg Conversion -->
+    <TextView
+        android:id="@+id/tvForceReadingDivided"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvForceReading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Kg Conversion: "
+        android:textColor="@color/accent_colour"
+        android:textSize="18sp" />
+
+    <!-- Button to Turn On LED -->
+
+    <!-- Button to Turn Off LED -->
+
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvForceReadingDivided"
+        android:layout_marginTop="37dp"
+        android:text="Turn On LED" />
+
+    <Button
+        android:id="@+id/btnOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnOn"
+        android:layout_marginTop="32dp"
+        android:text="Turn Off LED" />
+
+</RelativeLayout>
